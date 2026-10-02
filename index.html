@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>o meu site :)</title>
+  </head>
+  <body>
+    <h1>ESSE É O MEU SITE!</h1>
+    <h2>O site de quem, você pode perguntar..</h2>
+    <button onclick="change()" id="btn">De quem?</button>
+    <script>
+      console.log(true)
+      let h_2 = document.querySelector("h2")
+      let bnt = document.querySelector("#btn")
+      function change() {
+        h_2.textContent = "DO ERIC!!!!"
+        bnt.remove()
+      setTimeout(function() {
+        h_2.textContent = "Site do eric! 2 Fatos legais: 1º: essa foi minha melhor interação, 2º: terá atualizações futuras."
+        let mensagem = document.createElement("h3")
+        mensagem.textContent = "Feito no CodePen! Sem ele esse site não existiria :D"
+        document.body.appendChild(mensagem)
+      }, 1000)
+      }
+    </script>
+  </body>
+</html>
